@@ -13,7 +13,7 @@ const MakeWindow = () => {
     win.center()
     win.setFullScreenable(false)
     win.setHasShadow(false)
-    // win.setMenu(null)
+    win.setMenu(null)
     win.loadFile('views/index.html')
 
     win.webContents.on('new-window', function (e, url) {
